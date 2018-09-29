@@ -47,7 +47,26 @@ setInterval(function() {
   .catch(console.error);
   }, 30000)
 
-})
+});
+
+bot.on('message', async message => {
+  if(message.author.bot) return;
+
+  let prefix = config.prefix;
+  let messageBody = message.content.split(" ");
+  let command = messageBody[0];
+
+
+  if(command == `${prefix}code`){
+    let repo = new Discord.RichEmbed()
+    .setDescription("Stats Bot Repository")
+    .setColor("#00FF00")
+    .addField("Github", "https://github.com/CodeSpent/discord-stats");
+ 
+
+    return message.channel.send(repo);
+  }
+});
 
 
 
