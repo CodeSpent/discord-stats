@@ -1,0 +1,27 @@
+{
+  "name": "discord-stats",
+  "version": "1.0.0",
+  "description": "A simple discordjs bot for displaying stats for a server.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSpent/discord-stats.git"
+  },
+  "keywords": [
+    "discordjs",
+    "discord",
+    "node"
+  ],
+  "author": "Patrick Hanford (CodeSpent)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSpent/discord-stats/issues"
+  },
+  "homepage": "https://github.com/CodeSpent/discord-stats#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
