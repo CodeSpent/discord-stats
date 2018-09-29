@@ -30,8 +30,8 @@ setInterval(function() {
   
   // Log counts for debugging
   console.log("Total Users: " + userCount);
-  console.log("Online Users: " + userCount);
-  console.log("Coders: " + userCount);
+  console.log("Online Users: " + onlineCount);
+  console.log("Coders: " + coderCount);
 
   // Set channel names
   totalUsers.setName("Total Users: " + userCount)
