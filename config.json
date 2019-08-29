@@ -1,5 +1,5 @@
 { 
-    "token"  : "YourKey",
+    "token"  : "Your Bot Token",
     "prefix" : "!"
 
   }
