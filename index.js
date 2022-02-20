@@ -19,7 +19,7 @@ const totalUsers = bot.channels.get('470358845751951361');
 const onlineUsers = bot.channels.get('470366354222874665');
 const codeMonkeys = bot.channels.get('470358906225295391');
 
-// Check every 30 seconds for changes
+// Check every 1 hours (voir rate limit) for changes
 setInterval(function() {
   console.log('Getting stats update..')
 
@@ -45,8 +45,7 @@ setInterval(function() {
   codeMonkeys.setName("Coders: " + coderCount)
   .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
   .catch(console.error);
-  }, 30000)
-
+  }, 1000 * 60 * 60);
 });
 
 bot.on('message', async message => {
